@@ -6,19 +6,62 @@
  */
 
 function wait1(t) {
-
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(`Waited ${t}s`);
+    }, t * 1000)
+  );
 }
 
 function wait2(t) {
-
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(`Waited ${t}s`);
+    }, t * 1000)
+  );
 }
 
 function wait3(t) {
-
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(`Waited ${t}s`);
+    }, t * 1000)
+  );
 }
 
-function calculateTime(t1, t2, t3) {
+function sequentialExecution() {
+  const startTime = Date.now();
 
+  return wait1(1)
+    .then((result1) => {
+      console.log(result1);
+      return wait2(2);
+    })
+    .then((result2) => {
+      console.log(result2);
+      return wait3(3);
+    })
+    .then((result3) => {
+      console.log(result3);
+      const endTime = Date.now();
+      return endTime - startTime;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
 
-module.exports = calculateTime;
+// Example usage:
+sequentialExecution().then((time) => {
+  console.log(`Total time: ${time} ms`);
+});
+
+// Alternatively, you can use the following for asynchronous usage:
+// async function exampleAsyncFunction() {
+//   const time = await sequentialExecution();
+//   console.log(`Total time: ${time} ms`);
+// }
+
+// exampleAsyncFunction();
+
+// module.exports = calculateTime;
