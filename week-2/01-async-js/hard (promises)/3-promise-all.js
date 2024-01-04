@@ -44,10 +44,10 @@ function calculateTime(t1, t2, t3) {
     });
 }
 
-t1 = wait1(1);
-t2 = wait2(2);
-t3 = wait3(3);
+// t1 = wait1(1);
+// t2 = wait2(2);
+// t3 = wait3(3);
 
-calculateTime(t1, t2, t3);
+// calculateTime(t1, t2, t3);
 
 module.exports = calculateTime;

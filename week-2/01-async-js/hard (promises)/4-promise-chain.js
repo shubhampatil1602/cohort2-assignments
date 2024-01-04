@@ -29,7 +29,7 @@ function wait3(t) {
   );
 }
 
-function sequentialExecution() {
+function calculateTime() {
   const startTime = Date.now();
 
   return wait1(1)
@@ -52,7 +52,7 @@ function sequentialExecution() {
 }
 
 // Example usage:
-sequentialExecution().then((time) => {
+calculateTime().then((time) => {
   console.log(`Total time: ${time} ms`);
 });
 
@@ -64,4 +64,4 @@ sequentialExecution().then((time) => {
 
 // exampleAsyncFunction();
 
-// module.exports = calculateTime;
+module.exports = calculateTime;

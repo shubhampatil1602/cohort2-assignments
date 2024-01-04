@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #1f2c4b;
+        color: rgba(228, 207, 255, 0.524);
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        border: 2px solid rgb(112 0 255/0.7);
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+      }
+      h1 {
+        font-size: 10em;
+        margin: 0 auto;
+        height: 300px;
+        padding: 20px 60px;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+      .glow {
+        background-color: rgb(112 0 255/0.7);
+        height: 500px;
+        width: 800px;
+        filter: blur(300px);
+        position: absolute;
+        top: 100px;
+        left: 330px;
+        z-index: -10;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1 class="flex">HH:MM:SS</h1>
+      </div>
+    </section>
+    <div class="glow"></div>
+    <script src="./2-clock.js"></script>
+  </body>
+</html>
