@@ -7,3 +7,5 @@ Create the following functionality -
 - Try using the same DOM functionality we did in week 4. Don't try to use state variables in React just yet
 - Just try to port over our original HTML/JS impelementation over to a React project
 - Hard todo - If you can, try using `useState` that we discussed this week and propogate the TODOs using state (If you don't understand this, dont worry about it)
+
+`MY SOLUTION` - https://github.com/shubhampatil1602/cohort2-live/tree/main/week5/5.2/mern-todo

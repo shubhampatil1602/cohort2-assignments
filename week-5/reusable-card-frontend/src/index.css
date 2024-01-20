@@ -1,0 +1,29 @@
+.container {
+  border: 1px solid rgb(208, 206, 206);
+  border-radius: 8px;
+  width: 500px;
+  padding: 20px 10px 40px 20px;
+}
+p {
+  color: gray;
+}
+ul {
+  outline: none;
+  padding-left: 0;
+}
+li {
+  list-style: none;
+  line-height: 8px;
+  color: gray;
+}
+button {
+  margin-top: 6px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background: rgb(34, 111, 226);
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
